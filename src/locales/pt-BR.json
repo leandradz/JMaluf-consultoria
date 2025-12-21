@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "title": "Bem-vindo à JMaluf Consultoria",
+    "description": "Soluções de consultoria especializadas para o seu negócio"
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "description": "A JMaluf Consultoria oferece serviços especializados com uma equipe experiente e dedicada."
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Entre em contato conosco para saber mais sobre nossos serviços"
+  }
+}

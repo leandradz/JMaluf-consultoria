@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome to JMaluf Consultoria",
+    "description": "Specialized consulting solutions for your business"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "JMaluf Consultoria offers specialized services with an experienced and dedicated team."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us to learn more about our services"
+  }
+}
