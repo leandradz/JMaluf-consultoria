@@ -1,26 +1,36 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import "./Navigation.css";
-import logo from "../../public/logo.png";
+import logo from "../../assets/logo.png";
 
 function Navigation() {
   const { t, i18n } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navigation">
       <div className="nav-logo">
-        <img src={logo} alt="JMaluf Consultoria" width={24} /> JMaluf
-        Consultoria
+        <img  className="img-logo" src={logo} alt="JMaluf Consultoria" />
+        <span className="logo-text">JMaluf Consultoria</span>
       </div>
-      <div style={{ display: "flex", gap: 48, alignItems: "center" }}>
+      <div className={`nav-content ${menuOpen ? "open" : ""}`}>
         <div className="nav-links">
-          <Link to="/">{t("nav.home")}</Link>
-          <Link to="/about">{t("nav.about")}</Link>
-          <Link to="/contact">{t("nav.contact")}</Link>
+          <Link to="/" onClick={closeMenu}>{t("nav.home")}</Link>
+          <Link to="/about" onClick={closeMenu}>{t("nav.about")}</Link>
+          <Link to="/contact" onClick={closeMenu}>{t("nav.contact")}</Link>
         </div>
         <div className="language-switcher">
           <button
@@ -43,6 +53,11 @@ function Navigation() {
           </button>
         </div>
       </div>
+      <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   );
 }

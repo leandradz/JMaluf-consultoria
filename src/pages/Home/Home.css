@@ -1,0 +1,169 @@
+/* ========================================
+   HOME PAGE - MOBILE FIRST APPROACH
+   ======================================== */
+
+/* ========== COLOR PALETTE ==========*/
+:root {
+  --primary-color: #0b2a4a;
+  --secondary-color: #0956a2;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --white: white;
+  --transition-smooth: 0.6s ease-out;
+}
+
+/* ========== BASE STYLES (MOBILE FIRST) ==========*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 42, 74, 0.03) 0%,
+    rgba(9, 86, 162, 0.03) 100%
+  );
+}
+
+.home-logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  opacity: 0;
+  animation: fadeInScale 0.8s ease-out 0.2s forwards;
+  will-change: transform, opacity;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(11, 42, 74, 0.15);
+  background-color: transparent;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  line-height: 1.3;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  will-change: transform, opacity;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-color);
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+  will-change: transform, opacity;
+}
+
+/* ========== ANIMATIONS ==========*/
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== SCROLL ANIMATIONS (requires Intersection Observer) ==========*/
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--transition-smooth),
+    transform var(--transition-smooth);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ========== TABLET & DESKTOP STYLES ==========*/
+
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .home-logo {
+    width: 400px;
+  }
+
+  .title {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 16px;
+    text-align: left;
+  } 
+
+  /* Hover effect for desktop */
+   .home-logo:hover {
+    transform: scale(1.02) translateY(-5px);
+    box-shadow: 0 15px 40px rgba(11, 42, 74, 0.25);
+    transition: all 0.4s ease-out;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    padding: 5rem 3rem;
+    max-width: 1000px;
+  }
+
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 0;
+  }
+}
