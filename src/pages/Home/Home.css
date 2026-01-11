@@ -76,9 +76,7 @@
   font-size: 16px;
   line-height: 1.6;
   color: #dfdcdc;
-
 }
-
 
 @keyframes fadeInScale {
   from {
@@ -168,11 +166,7 @@
   width: 100%;
   min-height: auto;
   padding: 80px 40px;
-  background: linear-gradient(
-    135deg,
-    rgba(11, 42, 74, 0.03) 0%,
-    rgba(9, 86, 162, 0.03) 100%
-  );
+  background-color: white;
 }
 
 .contact-content {
@@ -310,7 +304,6 @@
   }
 
   .contact-methods {
-    order: -1;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 }
