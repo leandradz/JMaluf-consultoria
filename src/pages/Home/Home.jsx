@@ -1,19 +1,54 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import { Typography, Row, Col, Form, Input, Button, message } from "antd";
 import { PhoneOutlined, LinkedinOutlined } from "@ant-design/icons";
+import emailjs from "@emailjs/browser";
 import logo from "../../assets/logo-jmaluf.png";
 import "./Home.css";
 
 const { Title, Paragraph } = Typography;
 
+// ========== CONFIGURAÇÃO EMAIL JS ==========
+// Para configurar o EmailJS, siga estes passos:
+// 1. Acesse: https://www.emailjs.com/
+// 2. Crie uma conta gratuita
+// 3. Vá em "Email Services" e adicione seu provedor (Gmail, Hotmail, etc)
+// 4. Vá em "Email Templates" e crie um template com as variáveis: {{name}}, {{email}}, {{message}}
+// 5. Copie o Service ID, Template ID e Public Key
+// 6. Atualize as variáveis abaixo com seus IDs
+
+const SERVICE_ID = "YOUR_SERVICE_ID"; // Substituir pelo seu Service ID do EmailJS
+const TEMPLATE_ID = "YOUR_TEMPLATE_ID"; // Substituir pelo seu Template ID do EmailJS
+const PUBLIC_KEY = "YOUR_PUBLIC_KEY"; // Substituir pela sua Public Key do EmailJS
+const RECIPIENT_EMAIL = "leticia_andrade94@hotmail.com"; // Substituir pelo seu email para testes ou produção
+
+// Inicializar EmailJS apenas uma vez
+emailjs.init(PUBLIC_KEY);
+
 function Home() {
   const { t } = useTranslation();
   const [form] = Form.useForm();
+  const [loading, setLoading] = useState(false);
   const phoneNumber = "+55 (11) 55555-5555";
 
-  const handleSubmit = (values) => {
-    console.log("Form values:", values);
-    // Aqui você pode adicionar a lógica para enviar o formulário
+  const handleSubmit = async (values) => {
+    setLoading(true);
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        name: values.name,
+        email: values.email,
+        message: values.message,
+        to_email: RECIPIENT_EMAIL,
+      });
+
+      message.success("Mensagem enviada com sucesso!");
+      form.resetFields();
+    } catch (error) {
+      console.error("Erro ao enviar email:", error);
+      message.error("Erro ao enviar mensagem. Tente novamente.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleCopyPhone = () => {
@@ -151,6 +186,7 @@ function Home() {
                     htmlType="submit"
                     size="large"
                     className="submit-btn"
+                    loading={loading}
                   >
                     {t("contact.form.submit") || "Send Message"}
                   </Button>
