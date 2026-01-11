@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Typography, Row, Col } from "antd";
-import "./About.css";
+import "./Contact.css";
 
 const { Title, Paragraph } = Typography;
 
-function About() {
+function Contact() {
   const { t } = useTranslation();
 
   return (
@@ -12,10 +12,10 @@ function About() {
       <Row gutter={[32, 32]}>
         <Col xs={24}>
           <Title level={1} className="page-title">
-            {t("about.title")}
+            {t("contact.title")}
           </Title>
           <Paragraph className="page-description">
-            {t("about.description")}
+            {t("contact.description")}
           </Paragraph>
         </Col>
       </Row>
@@ -23,4 +23,4 @@ function About() {
   );
 }
 
-export default About;
+export default Contact;

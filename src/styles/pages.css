@@ -1,17 +1,1 @@
-.page {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 6rem;
-}
-
-.page h1 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-
-.page p {
-  color: #555;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
+/* About styles handled by Tailwind CSS */

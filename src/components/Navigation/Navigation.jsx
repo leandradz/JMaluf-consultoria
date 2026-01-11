@@ -1,64 +1,140 @@
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Layout, Menu, Button, Space, Drawer } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+import logo from "../../assets/logo-icon.png";
 import "./Navigation.css";
-import logo from "../../assets/logo.png";
+
+const { Header } = Layout;
 
 function Navigation() {
   const { t, i18n } = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const location = useLocation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setDrawerOpen(false);
   };
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  const menuItems = [
+    {
+      key: "/",
+      label: (
+        <Link to="/" onClick={() => setDrawerOpen(false)}>
+          {t("nav.home")}
+        </Link>
+      ),
+    },
+    {
+      key: "/about",
+      label: (
+        <Link to="/about" onClick={() => setDrawerOpen(false)}>
+          {t("nav.about")}
+        </Link>
+      ),
+    },
+    {
+      key: "/contact",
+      label: (
+        <Link to="/contact" onClick={() => setDrawerOpen(false)}>
+          {t("nav.contact")}
+        </Link>
+      ),
+    },
+  ];
 
   return (
-    <nav className="navigation">
-      <div className="nav-logo">
-        <img  className="img-logo" src={logo} alt="JMaluf Consultoria" />
-        <span className="logo-text">JMaluf Consultoria</span>
-      </div>
-      <div className={`nav-content ${menuOpen ? "open" : ""}`}>
-        <div className="nav-links">
-          <Link to="/" onClick={closeMenu}>{t("nav.home")}</Link>
-          <Link to="/about" onClick={closeMenu}>{t("nav.about")}</Link>
-          <Link to="/contact" onClick={closeMenu}>{t("nav.contact")}</Link>
+    <Header className="navigation-header">
+      <div className="nav-container">
+        <div className="nav-logo">
+          <img src={logo} alt="JMaluf Consultoria" className="logo-img" />
+          <span className="logo-text">JMaluf Consultoria</span>
         </div>
-        <div className="language-switcher">
-          <button
+
+        {/* Desktop Menu */}
+        <div className="desktop-menu">
+          <Menu
+            mode="horizontal"
+            selectedKeys={[location.pathname]}
+            items={menuItems}
+            style={{ border: "none", backgroundColor: "transparent" }}
+          />
+
+          {/* Language Switcher */}
+          <Space>
+            <Button
+              type={i18n.language === "pt-BR" ? "primary" : "default"}
+              size="small"
+              onClick={() => changeLanguage("pt-BR")}
+            >
+              PT
+            </Button>
+            <Button
+              type={i18n.language === "en" ? "primary" : "default"}
+              size="small"
+              onClick={() => changeLanguage("en")}
+            >
+              EN
+            </Button>
+            <Button
+              type={i18n.language === "es" ? "primary" : "default"}
+              size="small"
+              onClick={() => changeLanguage("es")}
+            >
+              ES
+            </Button>
+          </Space>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <Button
+          type="text"
+          icon={<MenuOutlined />}
+          onClick={() => setDrawerOpen(true)}
+          className="mobile-menu-btn"
+        />
+      </div>
+
+      {/* Mobile Drawer */}
+      <Drawer
+        title="Menu"
+        placement="right"
+        onClose={() => setDrawerOpen(false)}
+        open={drawerOpen}
+      >
+        <Menu
+          mode="vertical"
+          selectedKeys={[location.pathname]}
+          items={menuItems}
+          style={{ border: "none" }}
+        />
+        <div style={{ marginTop: "2rem", display: "flex", gap: "0.5rem" }}>
+          <Button
+            type={i18n.language === "pt-BR" ? "primary" : "default"}
+            block
             onClick={() => changeLanguage("pt-BR")}
-            className={i18n.language === "pt-BR" ? "active" : ""}
           >
             PT
-          </button>
-          <button
+          </Button>
+          <Button
+            type={i18n.language === "en" ? "primary" : "default"}
+            block
             onClick={() => changeLanguage("en")}
-            className={i18n.language === "en" ? "active" : ""}
           >
             EN
-          </button>
-          <button
+          </Button>
+          <Button
+            type={i18n.language === "es" ? "primary" : "default"}
+            block
             onClick={() => changeLanguage("es")}
-            className={i18n.language === "es" ? "active" : ""}
           >
             ES
-          </button>
+          </Button>
         </div>
-      </div>
-      <button className="hamburger" onClick={toggleMenu} aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
+      </Drawer>
+    </Header>
   );
 }
 

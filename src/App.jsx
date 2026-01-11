@@ -1,14 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
+import FloatingContactButton from "./components/FloatingContactButton/FloatingContactButton";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import "./App.css";
 
 function App() {
   return (
     <Router basename={import.meta.env.VITE_PUBLIC_URL || "/"}>
       <Navigation />
+      <FloatingContactButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
