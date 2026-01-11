@@ -14,6 +14,29 @@
   },
   "contact": {
     "title": "Entre em Contato",
-    "description": "Estamos aqui para ajudar. Entre em contato conosco caso tenha alguma dúvida ou pergunta."
+    "description": "Estamos aqui para ajudar. Entre em contato conosco caso tenha alguma dúvida ou pergunta.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensagem",
+      "submit": "Enviar",
+      "placeholder": {
+        "name": "Seu Nome",
+        "email": "Seu Email",
+        "message": "Sua Mensagem"
+      },
+      "required": {
+        "name": "Por favor, insira seu nome",
+        "email": "Por favor, insira seu email",
+        "message": "Por favor, insira sua mensagem"
+      }
+    },
+    "otherWays": {
+      "title": "Outras formas de contato",
+      "phone": "Telefone",
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "linkedinText": "Conecte-se conosco no LinkedIn"
+    }
   }
 }

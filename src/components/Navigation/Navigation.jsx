@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Layout, Menu, Button, Space, Drawer } from "antd";
+import { Layout, Anchor, Button, Space, Drawer } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import logo from "../../assets/logo-icon.png";
 import "./Navigation.css";
@@ -11,37 +10,27 @@ const { Header } = Layout;
 function Navigation() {
   const { t, i18n } = useTranslation();
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const location = useLocation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     setDrawerOpen(false);
   };
 
-  const menuItems = [
+  const anchorItems = [
     {
-      key: "/",
-      label: (
-        <Link to="/" onClick={() => setDrawerOpen(false)}>
-          {t("nav.home")}
-        </Link>
-      ),
+      key: "home",
+      href: "#home",
+      title: t("nav.home"),
     },
     {
-      key: "/about",
-      label: (
-        <Link to="/about" onClick={() => setDrawerOpen(false)}>
-          {t("nav.about")}
-        </Link>
-      ),
+      key: "about",
+      href: "#about",
+      title: t("nav.about"),
     },
     {
-      key: "/contact",
-      label: (
-        <Link to="/contact" onClick={() => setDrawerOpen(false)}>
-          {t("nav.contact")}
-        </Link>
-      ),
+      key: "contact",
+      href: "#contact",
+      title: t("nav.contact"),
     },
   ];
 
@@ -55,11 +44,14 @@ function Navigation() {
 
         {/* Desktop Menu */}
         <div className="desktop-menu">
-          <Menu
-            mode="horizontal"
-            selectedKeys={[location.pathname]}
-            items={menuItems}
-            style={{ border: "none", backgroundColor: "transparent" }}
+          <Anchor
+            items={anchorItems}
+            direction="horizontal"
+            targetOffset={64}
+            style={{
+              backgroundColor: "transparent",
+              padding: 0,
+            }}
           />
 
           {/* Language Switcher */}
@@ -104,11 +96,10 @@ function Navigation() {
         onClose={() => setDrawerOpen(false)}
         open={drawerOpen}
       >
-        <Menu
-          mode="vertical"
-          selectedKeys={[location.pathname]}
-          items={menuItems}
-          style={{ border: "none" }}
+        <Anchor
+          items={anchorItems}
+          targetOffset={64}
+          onClick={() => setDrawerOpen(false)}
         />
         <div style={{ marginTop: "2rem", display: "flex", gap: "0.5rem" }}>
           <Button
