@@ -28,6 +28,12 @@
   font-size: 18px;
   color: #0b2a4a;
   flex-shrink: 0;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
 }
 
 .logo-img {
@@ -40,9 +46,42 @@
   gap: 32px;
 }
 
+.nav-link {
+  color: #0b2a4a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: #0956a2;
+}
+
 .mobile-menu-btn {
   display: none;
   font-size: 20px;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 12px;
+  color: #0b2a4a;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+  background-color: #f0f5ff;
+  color: #0956a2;
 }
 
 @media (max-width: 768px) {

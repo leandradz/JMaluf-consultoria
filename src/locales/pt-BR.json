@@ -2,6 +2,7 @@
   "nav": {
     "home": "Início",
     "about": "Sobre",
+    "services": "Serviços",
     "contact": "Contato"
   },
   "home": {
@@ -10,7 +11,47 @@
   },
   "about": {
     "title": "Sobre Nós",
-    "description": "A JMaluf Consultoria oferece serviços especializados com uma equipe experiente e dedicada."
+    "description": "José Uebi Maluf é a força motriz por trás da JMaluf Consultoria, trazendo mais de duas décadas de experiência no setor alimentício e agrícola. Sua carreira inclui uma passagem significativa como executivo na BRF, onde aperfeiçoou sua expertise em planejamento estratégico, eficiência operacional e análise de mercado. A formação acadêmica de José inclui graduações em Engenharia e Administração pela Universidade Estadual de Maringá (UEM), fornecendo uma base sólida para seu trabalho de consultoria.",
+    "valuesTitle": "Nossos Valores",
+    "values": {
+      "integrity": {
+        "title": "Integridade",
+        "description": "Defendemos os mais altos padrões éticos em todas as nossas interações, garantindo transparência e confiança."
+      },
+      "quality": {
+        "title": "Qualidade",
+        "description": "Estamos comprometidos em entregar resultados excepcionais através de análises rigorosas e soluções inovadoras."
+      },
+      "sustainability": {
+        "title": "Sustentabilidade",
+        "description": "Promovemos práticas sustentáveis que beneficiam nossos clientes e o meio ambiente."
+      }
+    },
+    "missionTitle": "Nossa Missão",
+    "missionDescription": "Capacitar empresas do setor alimentício e agrícola com insights estratégicos e excelência operacional, impulsionando o crescimento sustentável e a liderança de mercado."
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "description": "A JMaluf Consultoria oferece uma gama de serviços especializados projetados para atender aos desafios e oportunidades únicos nos setores alimentício e agrícola. Nossa abordagem combina profundo conhecimento do setor com estratégias inovadoras para impulsionar o crescimento sustentável e a excelência operacional.",
+    "contactButton": "Entre em Contato",
+    "items": {
+      "strategic": {
+        "title": "Consultoria em Gestão Estratégica",
+        "description": "Fornecemos orientação estratégica para ajudar as empresas a navegar pela dinâmica do mercado, otimizar operações e alcançar o sucesso a longo prazo."
+      },
+      "innovation": {
+        "title": "Inovação de Produtos",
+        "description": "Nossa equipe auxilia no desenvolvimento de novos produtos e no aprimoramento dos existentes para atender às demandas em evolução dos consumidores e tendências do mercado."
+      },
+      "environmental": {
+        "title": "Sustentabilidade Ambiental",
+        "description": "Ajudamos as empresas a implementar práticas sustentáveis, reduzir o impacto ambiental e melhorar sua reputação de marca."
+      },
+      "process": {
+        "title": "Desenvolvimento de Novos Processos",
+        "description": "Apoiamos o desenvolvimento e implementação de novos processos para melhorar a eficiência, reduzir custos e garantir a qualidade do produto."
+      }
+    }
   },
   "contact": {
     "title": "Entre em Contato",

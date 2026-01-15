@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "services": "Services",
     "contact": "Contact"
   },
   "home": {
@@ -10,7 +11,47 @@
   },
   "about": {
     "title": "About Us",
-    "description": "JMaluf Consultoria offers specialized services with an experienced and dedicated team."
+    "description": "José Uebi Maluf is the driving force behind JMaluf Consultoria, bringing over two decades of experience in the food and agribusiness sector. His career includes a significant tenure as an executive at BRF, where he honed his expertise in strategic planning, operational efficiency, and market analysis. José's academic background includes degrees in Engineering and Administration from the State University of Maringá (UEM), providing a solid foundation for his consulting work.",
+    "valuesTitle": "Our Values",
+    "values": {
+      "integrity": {
+        "title": "Integrity",
+        "description": "We uphold the highest ethical standards in all our interactions, ensuring transparency and trust."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "We are committed to delivering exceptional results through rigorous analysis and innovative solutions."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We promote sustainable practices that benefit both our clients and the environment."
+      }
+    },
+    "missionTitle": "Our Mission",
+    "missionDescription": "To empower food and agribusiness companies with strategic insights and operational excellence, driving sustainable growth and market leadership."
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "JMaluf Consultoria offers a range of specialized services designed to address the unique challenges and opportunities within the food and agribusiness sectors. Our approach combines deep industry knowledge with innovative strategies to drive sustainable growth and operational excellence.",
+    "contactButton": "Contact Us",
+    "items": {
+      "strategic": {
+        "title": "Strategic Management Consulting",
+        "description": "We provide strategic guidance to help businesses navigate market dynamics, optimize operations, and achieve long-term success."
+      },
+      "innovation": {
+        "title": "Product Innovation",
+        "description": "Our team assists in developing new products and enhancing existing ones to meet evolving consumer demands and market trends."
+      },
+      "environmental": {
+        "title": "Environmental Sustainability",
+        "description": "We help companies implement sustainable practices, reduce environmental impact, and enhance their brand reputation."
+      },
+      "process": {
+        "title": "New Process Development",
+        "description": "We support the development and implementation of new processes to improve efficiency, reduce costs, and ensure product quality."
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",

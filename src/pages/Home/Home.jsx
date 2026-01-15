@@ -1,7 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import { Typography, Row, Col, Form, Input, Button, message } from "antd";
-import { PhoneOutlined, LinkedinOutlined } from "@ant-design/icons";
+import { Typography, Row, Col, Form, Input, Button, message, Card } from "antd";
+import {
+  PhoneOutlined,
+  LinkedinOutlined,
+  LineChartOutlined,
+  BulbOutlined,
+  GlobalOutlined,
+  SettingOutlined,
+  SafetyOutlined,
+  DesktopOutlined,
+} from "@ant-design/icons";
 import emailjs from "@emailjs/browser";
 import logo from "../../assets/logo-jmaluf.png";
 import "./Home.css";
@@ -60,6 +69,29 @@ function Home() {
     window.open("https://linkedin.com.br", "_blank");
   };
 
+  const services = [
+    {
+      icon: <LineChartOutlined />,
+      title: t("services.items.strategic.title"),
+      description: t("services.items.strategic.description"),
+    },
+    {
+      icon: <BulbOutlined />,
+      title: t("services.items.innovation.title"),
+      description: t("services.items.innovation.description"),
+    },
+    {
+      icon: <GlobalOutlined />,
+      title: t("services.items.environmental.title"),
+      description: t("services.items.environmental.description"),
+    },
+    {
+      icon: <SettingOutlined />,
+      title: t("services.items.process.title"),
+      description: t("services.items.process.description"),
+    },
+  ];
+
   return (
     <div>
       {/* Seção Home */}
@@ -95,18 +127,98 @@ function Home() {
       </div>
 
       {/* Seção About */}
-      {/* <div id="about" className="page-container">
-        <Row gutter={[32, 32]}>
-          <Col xs={24}>
-            <Title level={1} className="page-title">
-              {t("about.title")}
-            </Title>
-            <Paragraph className="page-description">
-              {t("about.description")}
-            </Paragraph>
-          </Col>
-        </Row>
-      </div> */}
+      <div id="about" className="about-section">
+        <div className="about-content">
+          <Title level={1} className="about-title">
+            {t("about.title")}
+          </Title>
+          <Paragraph className="about-description">
+            {t("about.description")}
+          </Paragraph>
+
+          {/* Our Values */}
+          <Title level={2} className="about-subtitle">
+            {t("about.valuesTitle")}
+          </Title>
+          <Row gutter={[32, 32]} className="values-grid">
+            <Col xs={24} sm={24} md={8}>
+              <Card className="value-card" bordered={false}>
+                <div className="value-icon">
+                  <SafetyOutlined />
+                </div>
+                <Title level={4} className="value-title">
+                  {t("about.values.integrity.title")}
+                </Title>
+                <Paragraph className="value-description">
+                  {t("about.values.integrity.description")}
+                </Paragraph>
+              </Card>
+            </Col>
+            <Col xs={24} sm={24} md={8}>
+              <Card className="value-card" bordered={false}>
+                <div className="value-icon">
+                  <DesktopOutlined />
+                </div>
+                <Title level={4} className="value-title">
+                  {t("about.values.quality.title")}
+                </Title>
+                <Paragraph className="value-description">
+                  {t("about.values.quality.description")}
+                </Paragraph>
+              </Card>
+            </Col>
+            <Col xs={24} sm={24} md={8}>
+              <Card className="value-card" bordered={false}>
+                <div className="value-icon">
+                  <GlobalOutlined />
+                </div>
+                <Title level={4} className="value-title">
+                  {t("about.values.sustainability.title")}
+                </Title>
+                <Paragraph className="value-description">
+                  {t("about.values.sustainability.description")}
+                </Paragraph>
+              </Card>
+            </Col>
+          </Row>
+
+          {/* Our Mission */}
+          <Title level={2} className="about-subtitle">
+            {t("about.missionTitle")}
+          </Title>
+          <Paragraph className="about-mission">
+            {t("about.missionDescription")}
+          </Paragraph>
+        </div>
+      </div>
+
+      {/* Seção Services */}
+      <div id="services" className="services-section">
+        <div className="services-section-content">
+          <Title level={1} className="services-section-title">
+            {t("services.title")}
+          </Title>
+          <Paragraph className="services-section-description">
+            {t("services.description")}
+          </Paragraph>
+
+          <Row gutter={[32, 32]} className="services-section-grid">
+            {services.map((service, index) => (
+              <Col xs={24} sm={24} md={12} lg={12} xl={12} key={index}>
+                <Card className="service-section-card" bordered={false}>
+                  <div className="service-section-icon">{service.icon}</div>
+                  <Title level={3} className="service-section-card-title">
+                    {service.title}
+                  </Title>
+                  <Paragraph className="service-section-card-description">
+                    {service.description}
+                  </Paragraph>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </div>
+      </div>
 
       {/* Seção Contact */}
       <div id="contact" className="contact-container">
