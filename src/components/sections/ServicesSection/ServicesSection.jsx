@@ -53,7 +53,7 @@ function ServicesSection() {
 
         <Row gutter={[32, 32]} className="services-grid">
           {services.map((service, index) => (
-            <Col xs={24} sm={12} md={12} lg={6} key={index}>
+            <Col xs={24} sm={12} md={12} lg={12} key={index}>
               <ServiceCard
                 icon={service.icon}
                 title={service.title}

@@ -22,17 +22,6 @@
   transition: transform var(--transition-medium);
 }
 
-.value-card:hover::before,
-.value-card-visible::before {
-  transform: scaleX(1);
-}
-
-.value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-border-primary);
-}
-
 .value-card-icon {
   font-size: 36px;
   color: var(--color-primary);
@@ -40,10 +29,22 @@
   transition: all var(--transition-fast);
 }
 
-.value-card:hover .value-card-icon,
-.value-card-visible .value-card-icon {
-  transform: scale(1.1);
-  color: var(--color-primary-dark);
+/* Desktop: Hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .value-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-border-primary);
+  }
+
+  .value-card:hover .value-card-icon {
+    transform: scale(1.1);
+    color: var(--color-primary-dark);
+  }
 }
 
 .value-card-title {
@@ -62,10 +63,10 @@
   margin-bottom: 0 !important;
 }
 
-/* Mobile: Apply hover effect when card becomes visible */
-@media (max-width: 768px) {
-  .value-card {
-    padding: 20px;
+/* Mobile/Tablet: Apply effects when card becomes visible (devices without hover) */
+@media (hover: none) and (pointer: coarse) {
+  .value-card-visible::before {
+    transform: scaleX(1);
   }
 
   .value-card-visible {
@@ -77,5 +78,12 @@
   .value-card-visible .value-card-icon {
     transform: scale(1.1);
     color: var(--color-primary-dark);
+  }
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .value-card {
+    padding: 20px;
   }
 }

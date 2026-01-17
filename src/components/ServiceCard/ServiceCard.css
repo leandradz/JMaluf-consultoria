@@ -23,17 +23,6 @@
   transition: transform var(--transition-medium);
 }
 
-.service-card:hover::before,
-.service-card-visible::before {
-  transform: scaleX(1);
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-border-primary);
-}
-
 .service-card-icon {
   font-size: 40px;
   color: var(--color-primary);
@@ -43,10 +32,22 @@
   transition: all var(--transition-fast);
 }
 
-.service-card:hover .service-card-icon,
-.service-card-visible .service-card-icon {
-  transform: scale(1.1);
-  color: var(--color-primary-dark);
+/* Desktop: Hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-border-primary);
+  }
+
+  .service-card:hover .service-card-icon {
+    transform: scale(1.1);
+    color: var(--color-primary-dark);
+  }
 }
 
 .service-card-title {
@@ -66,10 +67,10 @@
   margin-bottom: 0 !important;
 }
 
-/* Mobile: Apply hover effect when card becomes visible */
-@media (max-width: 768px) {
-  .service-card {
-    padding: 20px;
+/* Mobile/Tablet: Apply effects when card becomes visible (devices without hover) */
+@media (hover: none) and (pointer: coarse) {
+  .service-card-visible::before {
+    transform: scaleX(1);
   }
 
   .service-card-visible {
@@ -81,6 +82,13 @@
   .service-card-visible .service-card-icon {
     transform: scale(1.1);
     color: var(--color-primary-dark);
+  }
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  .service-card {
+    padding: 20px;
   }
 
   .service-card-icon {

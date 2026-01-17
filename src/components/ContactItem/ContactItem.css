@@ -25,17 +25,6 @@
   transition: transform var(--transition-medium);
 }
 
-.contact-item:hover::before,
-.contact-item-visible::before {
-  transform: scaleX(1);
-}
-
-.contact-item:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-8px);
-  border-color: var(--color-border-primary);
-}
-
 .contact-item-icon {
   min-width: 48px;
   width: 48px;
@@ -50,11 +39,23 @@
   transition: all var(--transition-fast);
 }
 
-.contact-item:hover .contact-item-icon,
-.contact-item-visible .contact-item-icon {
-  transform: scale(1.1);
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: var(--color-white);
+/* Desktop: Hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .contact-item:hover::before {
+    transform: scaleX(1);
+  }
+
+  .contact-item:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px);
+    border-color: var(--color-border-primary);
+  }
+
+  .contact-item:hover .contact-item-icon {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+  }
 }
 
 .contact-item-info {
@@ -74,8 +75,12 @@
   margin: 0 !important;
 }
 
-/* Mobile: Apply hover effect when card becomes visible */
-@media (max-width: 768px) {
+/* Mobile/Tablet: Apply effects when card becomes visible (devices without hover) */
+@media (hover: none) and (pointer: coarse) {
+  .contact-item-visible::before {
+    transform: scaleX(1);
+  }
+
   .contact-item-visible {
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
