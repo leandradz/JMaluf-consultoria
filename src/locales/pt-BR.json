@@ -7,7 +7,11 @@
   },
   "home": {
     "title": "Especialista em inovação, gestão e sustentabilidade para o setor alimentício.",
-    "description": "A JMaluf Consultoria, liderada pelo consultor José Uebi Maluf, oferece serviços de consultoria especializada no setor agroalimentar. Nosso foco é impulsionar a inovação, aprimorar as práticas de gestão e promover soluções sustentáveis ​​para empresas do setor."
+    "description": "A JMaluf Consultoria, liderada pelo consultor José Uebi Maluf, oferece serviços de consultoria especializada no setor agroalimentar. Nosso foco é impulsionar a inovação, aprimorar as práticas de gestão e promover soluções sustentáveis ​​para empresas do setor.",
+    "stats": {
+      "yearsExperience": "Anos de Experiência",
+      "projectsCompleted": "Projetos Realizados"
+    }
   },
   "about": {
     "title": "Sobre Nós",

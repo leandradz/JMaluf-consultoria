@@ -43,12 +43,12 @@ function HeroSection() {
           <div className="hero-stats">
             <div className="hero-stat-item">
               <div className="hero-stat-number">{STATS.YEARS_EXPERIENCE}</div>
-              <div className="hero-stat-label">Anos de Experiência</div>
+              <div className="hero-stat-label">{t("home.stats.yearsExperience")}</div>
             </div>
             <div className="hero-stat-divider"></div>
             <div className="hero-stat-item">
               <div className="hero-stat-number">{STATS.PROJECTS_COMPLETED}</div>
-              <div className="hero-stat-label">Projetos Realizados</div>
+              <div className="hero-stat-label">{t("home.stats.projectsCompleted")}</div>
             </div>
           </div>
         </Col>
