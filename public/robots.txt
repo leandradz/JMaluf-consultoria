@@ -1,0 +1,20 @@
+# robots.txt para JMaluf Consultoria
+# Permite todos os bots de busca
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jmalufconsultoria.com.br/sitemap.xml
+
+# Bloquear arquivos sensíveis
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /api/
+
+# Bots específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
