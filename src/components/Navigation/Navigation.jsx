@@ -31,10 +31,17 @@ function Navigation() {
     setDrawerOpen(false);
   };
 
+  const handleLogoClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <Header className="navigation-header">
       <div className="nav-container">
-        <Link to="/" className="nav-logo">
+        <Link to="/" className="nav-logo" onClick={handleLogoClick}>
           <img src={logo} alt="JMaluf Consultoria" className="logo-img" />
           <span className="logo-text">JMaluf Consultoria</span>
         </Link>
