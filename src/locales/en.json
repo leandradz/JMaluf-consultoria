@@ -77,7 +77,10 @@
       "phone": "Phone",
       "email": "Email",
       "linkedin": "LinkedIn",
-      "linkedinText": "Connect with us on LinkedIn"
+      "linkedinText": "Connect with us on LinkedIn",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Send us a message on WhatsApp",
+      "whatsappMessage": "Hello, I would like more information about your consultancy"
     }
   }
 }

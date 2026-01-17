@@ -4,6 +4,7 @@ import { Typography, Row, Col, Form, Input, Button, message, Card } from "antd";
 import {
   PhoneOutlined,
   LinkedinOutlined,
+  WhatsAppOutlined,
   LineChartOutlined,
   BulbOutlined,
   GlobalOutlined,
@@ -67,6 +68,12 @@ function Home() {
 
   const handleRedirectLinkedIn = () => {
     window.open("https://linkedin.com.br", "_blank");
+  };
+
+  const handleRedirectWhatsApp = () => {
+    const whatsappNumber = "5519983691364";
+    const message = encodeURIComponent(t("contact.otherWays.whatsappMessage"));
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
 
   const services = [
@@ -352,6 +359,21 @@ function Home() {
                   </Title>
                   <Paragraph className="contact-item-text">
                     {t("contact.otherWays.linkedinText") || "Connect with us on LinkedIn"}
+                  </Paragraph>
+                </div>
+              </div>
+
+              {/* WhatsApp */}
+              <div className="contact-item" onClick={handleRedirectWhatsApp}>
+                <div className="contact-icon">
+                  <WhatsAppOutlined />
+                </div>
+                <div className="contact-info">
+                  <Title level={5} className="contact-item-title">
+                    {t("contact.otherWays.whatsapp") || "WhatsApp"}
+                  </Title>
+                  <Paragraph className="contact-item-text">
+                    {t("contact.otherWays.whatsappText") || "Send us a message on WhatsApp"}
                   </Paragraph>
                 </div>
               </div>
