@@ -11,6 +11,14 @@
   overflow: hidden;
 }
 
+/* Mobile: Add section separator */
+@media (max-width: 768px) {
+  .hero-section {
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: 60px;
+  }
+}
+
 .hero-section::before {
   content: '';
   position: absolute;

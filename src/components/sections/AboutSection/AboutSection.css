@@ -11,6 +11,14 @@
   );
 }
 
+/* Mobile: Add section separator */
+@media (max-width: 768px) {
+  .about-section {
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: 60px;
+  }
+}
+
 .about-content {
   width: 100%;
   max-width: var(--container-lg);

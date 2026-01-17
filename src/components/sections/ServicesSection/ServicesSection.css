@@ -5,12 +5,22 @@
   width: 100%;
   padding: 100px 20px;
   background: var(--color-white);
+  text-align: left;
+}
+
+/* Mobile: Add section separator */
+@media (max-width: 768px) {
+  .services-section {
+    border-bottom: 1px solid var(--color-border-light);
+    padding-bottom: 60px;
+  }
 }
 
 .services-content {
   width: 100%;
   max-width: var(--container-lg);
   animation: fadeInUp 0.8s ease-out;
+  text-align: left;
 }
 
 .services-title {
@@ -21,7 +31,7 @@
   font-family: "Work Sans" !important;
   letter-spacing: -0.5px;
   line-height: var(--line-height-tight) !important;
-  text-align: left;
+  text-align: left !important;
   animation: fadeInScale 0.8s ease-out 0.2s forwards;
   opacity: 0;
 }
@@ -29,12 +39,19 @@
 .services-description {
   font-size: var(--font-size-md) !important;
   color: var(--color-gray-400) !important;
-  max-width: var(--container-md);
   margin: 0 0 var(--spacing-3xl) 0 !important;
+  padding: 0 !important;
   line-height: var(--line-height-loose) !important;
-  text-align: left;
+  text-align: left !important;
   animation: fadeInScale 0.8s ease-out 0.4s forwards;
   opacity: 0;
+}
+
+.services-description.ant-typography {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .services-grid {
