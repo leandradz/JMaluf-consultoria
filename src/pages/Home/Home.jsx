@@ -96,22 +96,26 @@ function Home() {
     <div>
       {/* Seção Home */}
       <div id="home" className="home-container">
+        <div className="home-background-decoration"></div>
         <Row
-          gutter={[48, 48]}
+          gutter={[64, 64]}
           align="middle"
           className="home-row"
-          style={{ maxWidth: "1200px", margin: "0 auto" }}
+          style={{ maxWidth: "1300px", margin: "0 auto", position: "relative", zIndex: 1 }}
         >
-          <Col xs={24} md={14} className="home-image-col">
-            <img
-              draggable={false}
-              alt="Logo JMaluf Consultoria"
-              src={logo}
-              className="home-logo"
-            />
+          <Col xs={24} md={12} lg={11} className="home-image-col">
+            <div className="home-logo-wrapper">
+              <img
+                draggable={false}
+                alt="Logo JMaluf Consultoria"
+                src={logo}
+                className="home-logo"
+              />
+            </div>
           </Col>
 
-          <Col xs={24} md={10} className="home-text-col">
+          <Col xs={24} md={12} lg={13} className="home-text-col">
+            <div className="home-label">CONSULTORIA ESPECIALIZADA</div>
             <Title
               level={1}
               className="home-title"
@@ -122,6 +126,17 @@ function Home() {
             <Paragraph className="home-description">
               {t("home.description")}
             </Paragraph>
+            <div className="home-stats">
+              <div className="home-stat-item">
+                <div className="home-stat-number">20+</div>
+                <div className="home-stat-label">Anos de Experiência</div>
+              </div>
+              <div className="home-stat-divider"></div>
+              <div className="home-stat-item">
+                <div className="home-stat-number">100+</div>
+                <div className="home-stat-label">Projetos Realizados</div>
+              </div>
+            </div>
           </Col>
         </Row>
       </div>
