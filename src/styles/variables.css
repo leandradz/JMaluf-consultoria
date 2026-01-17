@@ -1,0 +1,144 @@
+/* ========== COLOR PALETTE ========== */
+:root {
+  /* Primary Colors */
+  --color-primary: #0956a2;
+  --color-primary-dark: #0b2a4a;
+  --color-primary-light: #e3f2fd;
+  --color-primary-lighter: #f0f5ff;
+  
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-gray-50: #f8fafb;
+  --color-gray-100: #f0f5ff;
+  --color-gray-200: #e3f2fd;
+  --color-gray-300: #8a99a8;
+  --color-gray-400: #5a6c7d;
+  --color-gray-500: #666666;
+  
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafb;
+  --color-bg-gradient-start: rgba(11, 42, 74, 0.015);
+  --color-bg-gradient-end: rgba(9, 86, 162, 0.015);
+  
+  /* Border Colors */
+  --color-border-light: rgba(11, 42, 74, 0.06);
+  --color-border-medium: rgba(11, 42, 74, 0.1);
+  --color-border-primary: rgba(9, 86, 162, 0.15);
+  
+  /* Shadow Colors */
+  --shadow-sm: 0 2px 16px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(9, 86, 162, 0.25);
+  --shadow-lg: 0 12px 32px rgba(9, 86, 162, 0.15);
+  --shadow-xl: 0 20px 60px rgba(11, 42, 74, 0.08);
+  
+  /* ========== SPACING ========== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  
+  /* ========== FONT SIZES ========== */
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-base: 15px;
+  --font-size-md: 17px;
+  --font-size-lg: 19px;
+  --font-size-xl: 22px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 38px;
+  --font-size-4xl: 44px;
+  --font-size-5xl: 50px;
+  
+  /* ========== FONT WEIGHTS ========== */
+  --font-weight-normal: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  
+  /* ========== BORDER RADIUS ========== */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 16px;
+  --radius-xl: 30px;
+  --radius-full: 50px;
+  
+  /* ========== LINE HEIGHTS ========== */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.7;
+  --line-height-loose: 1.9;
+  
+  /* ========== TRANSITIONS ========== */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s ease-out;
+  
+  /* ========== Z-INDEX ========== */
+  --z-index-base: 1;
+  --z-index-dropdown: 10;
+  --z-index-header: 100;
+  --z-index-modal: 1000;
+  
+  /* ========== BREAKPOINTS (for reference in JS) ========== */
+  --breakpoint-mobile: 480px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1200px;
+  --breakpoint-wide: 1440px;
+  
+  /* ========== CONTAINER WIDTHS ========== */
+  --container-sm: 700px;
+  --container-md: 850px;
+  --container-lg: 1200px;
+  --container-xl: 1300px;
+}
+
+/* ========== GRADIENTS ========== */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.gradient-primary-reverse {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+}
+
+.gradient-bg-light {
+  background: linear-gradient(135deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+}
+
+.gradient-bg-primary {
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 50%, var(--color-gray-50) 100%);
+}
+
+.gradient-icon-bg {
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary-lighter) 100%);
+}
+
+/* ========== UTILITY CLASSES ========== */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-dark {
+  color: var(--color-primary-dark);
+}
+
+.text-muted {
+  color: var(--color-gray-400);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-card-hover {
+  box-shadow: var(--shadow-lg);
+}
