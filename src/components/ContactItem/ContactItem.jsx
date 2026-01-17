@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Typography } from "antd";
+import useInViewport from "../../hooks/useInViewport";
 import "./ContactItem.css";
 
 const { Title, Paragraph } = Typography;
@@ -15,8 +16,17 @@ const { Title, Paragraph } = Typography;
  * @param {Function} props.onClick - Click handler function
  */
 function ContactItem({ icon, title, text, onClick }) {
+  const [ref, isInViewport] = useInViewport();
+
   return (
-    <div className="contact-item" onClick={onClick} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && onClick()}>
+    <div 
+      ref={ref}
+      className={`contact-item ${isInViewport ? 'contact-item-visible' : ''}`}
+      onClick={onClick} 
+      role="button" 
+      tabIndex={0} 
+      onKeyPress={(e) => e.key === 'Enter' && onClick()}
+    >
       <div className="contact-item-icon">{icon}</div>
       <div className="contact-item-info">
         <Title level={5} className="contact-item-title">

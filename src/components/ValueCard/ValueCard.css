@@ -22,7 +22,8 @@
   transition: transform var(--transition-medium);
 }
 
-.value-card:hover::before {
+.value-card:hover::before,
+.value-card-visible::before {
   transform: scaleX(1);
 }
 
@@ -39,7 +40,8 @@
   transition: all var(--transition-fast);
 }
 
-.value-card:hover .value-card-icon {
+.value-card:hover .value-card-icon,
+.value-card-visible .value-card-icon {
   transform: scale(1.1);
   color: var(--color-primary-dark);
 }
@@ -60,8 +62,20 @@
   margin-bottom: 0 !important;
 }
 
+/* Mobile: Apply hover effect when card becomes visible */
 @media (max-width: 768px) {
   .value-card {
     padding: 20px;
+  }
+
+  .value-card-visible {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-border-primary);
+  }
+
+  .value-card-visible .value-card-icon {
+    transform: scale(1.1);
+    color: var(--color-primary-dark);
   }
 }

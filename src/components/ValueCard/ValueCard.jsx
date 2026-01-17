@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Card, Typography } from "antd";
+import useInViewport from "../../hooks/useInViewport";
 import "./ValueCard.css";
 
 const { Title, Paragraph } = Typography;
@@ -14,8 +15,14 @@ const { Title, Paragraph } = Typography;
  * @param {string} props.description - Value description
  */
 function ValueCard({ icon, title, description }) {
+  const [ref, isInViewport] = useInViewport();
+
   return (
-    <Card className="value-card" bordered={false}>
+    <Card 
+      ref={ref}
+      className={`value-card ${isInViewport ? 'value-card-visible' : ''}`} 
+      bordered={false}
+    >
       <div className="value-card-icon">{icon}</div>
       <Title level={4} className="value-card-title">
         {title}
