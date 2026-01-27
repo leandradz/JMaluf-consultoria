@@ -13,16 +13,17 @@ export const EMAIL_CONFIG = {
 
 // ========== CONTACT INFORMATION ==========
 export const CONTACT_INFO = {
-  PHONE: "+55 (11) 55555-5555",
-  PHONE_WHATSAPP: "5519983691364",
+  PHONE: "+55 (45) 9121-1804",
+  PHONE_WHATSAPP: "554591211804",
   LINKEDIN_URL: "https://linkedin.com.br",
   EMAIL: "leticia_andrade94@hotmail.com",
 };
 
 // ========== STATISTICS ==========
 export const STATS = {
-  YEARS_EXPERIENCE: "20+",
-  PROJECTS_COMPLETED: "100+",
+  YEARS_EXPERIENCE: "+30",
+  PROJECTS_COMPLETED: "+100",
+  COUNTRIES_SERVED: "+5",
 };
 
 // ========== ANIMATION DELAYS ==========

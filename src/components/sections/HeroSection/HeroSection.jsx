@@ -16,11 +16,7 @@ function HeroSection() {
   return (
     <div id="home" className="hero-section">
       <div className="hero-background-decoration"></div>
-      <Row
-        gutter={[64, 64]}
-        align="middle"
-        className="hero-row"
-      >
+      <Row gutter={[64, 64]} align="middle" className="hero-row">
         <Col xs={24} md={12} lg={11} className="hero-image-col">
           <div className="hero-logo-wrapper">
             <img
@@ -40,15 +36,29 @@ function HeroSection() {
           <Paragraph className="hero-description">
             {t("home.description")}
           </Paragraph>
+          <Paragraph className="hero-description">
+            {t("home.description_2")}
+          </Paragraph>
           <div className="hero-stats">
             <div className="hero-stat-item">
               <div className="hero-stat-number">{STATS.YEARS_EXPERIENCE}</div>
-              <div className="hero-stat-label">{t("home.stats.yearsExperience")}</div>
+              <div className="hero-stat-label">
+                {t("home.stats.yearsExperience")}
+              </div>
             </div>
             <div className="hero-stat-divider"></div>
             <div className="hero-stat-item">
               <div className="hero-stat-number">{STATS.PROJECTS_COMPLETED}</div>
-              <div className="hero-stat-label">{t("home.stats.projectsCompleted")}</div>
+              <div className="hero-stat-label">
+                {t("home.stats.projectsCompleted")}
+              </div>
+            </div>
+            <div className="hero-stat-divider"></div>
+            <div className="hero-stat-item">
+              <div className="hero-stat-number">{STATS.COUNTRIES_SERVED}</div>
+              <div className="hero-stat-label">
+                {t("home.stats.countriesServed")}
+              </div>
             </div>
           </div>
         </Col>

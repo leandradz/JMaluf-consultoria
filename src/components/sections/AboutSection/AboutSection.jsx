@@ -1,6 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Typography, Row, Col } from "antd";
-import { SafetyOutlined, DesktopOutlined, GlobalOutlined } from "@ant-design/icons";
+import {
+  TrophyOutlined,
+  SafetyOutlined,
+  EyeOutlined,
+  RocketOutlined,
+} from "@ant-design/icons";
 import ValueCard from "../../ValueCard/ValueCard";
 import "./AboutSection.css";
 
@@ -13,21 +18,26 @@ const { Title, Paragraph } = Typography;
 function AboutSection() {
   const { t } = useTranslation();
 
-  const values = [
+  const principles = [
+    {
+      icon: <TrophyOutlined />,
+      title: t("about.principles.integrity.title"),
+      description: t("about.principles.integrity.description"),
+    },
     {
       icon: <SafetyOutlined />,
-      title: t("about.values.integrity.title"),
-      description: t("about.values.integrity.description"),
+      title: t("about.principles.confidentiality.title"),
+      description: t("about.principles.confidentiality.description"),
     },
     {
-      icon: <DesktopOutlined />,
-      title: t("about.values.quality.title"),
-      description: t("about.values.quality.description"),
+      icon: <EyeOutlined />,
+      title: t("about.principles.transparency.title"),
+      description: t("about.principles.transparency.description"),
     },
     {
-      icon: <GlobalOutlined />,
-      title: t("about.values.sustainability.title"),
-      description: t("about.values.sustainability.description"),
+      icon: <RocketOutlined />,
+      title: t("about.principles.businessFocus.title"),
+      description: t("about.principles.businessFocus.description"),
     },
   ];
 
@@ -40,30 +50,27 @@ function AboutSection() {
         <Paragraph className="about-description">
           {t("about.description")}
         </Paragraph>
-
+        <Paragraph className="about-description">
+          {t("about.description_1")}
+        </Paragraph>
+        <Paragraph className="about-description">
+          {t("about.description_2")}
+        </Paragraph>
         {/* Our Values */}
         <Title level={2} className="about-subtitle">
-          {t("about.valuesTitle")}
+          {t("about.principlesTitle")}
         </Title>
-        <Row gutter={[32, 32]} className="values-grid">
-          {values.map((value, index) => (
-            <Col xs={24} sm={24} md={8} key={index}>
+        <Row gutter={[24, 24]} className="values-grid">
+          {principles.map((principle, index) => (
+            <Col xs={24} sm={12} md={6} key={index}>
               <ValueCard
-                icon={value.icon}
-                title={value.title}
-                description={value.description}
+                icon={principle.icon}
+                title={principle.title}
+                description={principle.description}
               />
             </Col>
           ))}
         </Row>
-
-        {/* Our Mission */}
-        <Title level={2} className="about-subtitle">
-          {t("about.missionTitle")}
-        </Title>
-        <Paragraph className="about-mission">
-          {t("about.missionDescription")}
-        </Paragraph>
       </div>
     </div>
   );

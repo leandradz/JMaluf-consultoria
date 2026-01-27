@@ -1,68 +1,76 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Acerca de",
+    "about": "Sobre nosotros",
     "services": "Servicios",
     "contact": "Contacto"
   },
   "home": {
-    "title": "Especialista en innovación, gestión y sostenibilidad para el sector alimentario.",
-    "description": "JMaluf Consultoria, dirigida por el consultor José Uebi Maluf, ofrece servicios de consultoría especializados en el sector agroalimentario. Nos centramos en impulsar la innovación, mejorar las prácticas de gestión y promover soluciones sostenibles para las empresas del sector.",
+    "title": "Consultoría técnica y estratégica para el desarrollo de productos, procesos e intermediación de negocios",
+    "description": "JMaluf Consulting es una consultoría técnica especializada en el desarrollo y optimización de productos y procesos, conectando tecnologías, socios estratégicos y oportunidades de mercado a escala global.",
+    "description_2": "Actúa como un hub técnico-estratégico, apoyando a empresas de los sectores de ingredientes y alimentos para los mercados de nutrición humana (food), nutrición animal (feed), nutracéuticos y biosoluciones para plantas en desafíos que exigen ejecución técnica, toma de decisiones segura y generación de valor económico, con enfoque en la agregación de valor a la materia prima.",
     "stats": {
       "yearsExperience": "Años de Experiencia",
-      "projectsCompleted": "Proyectos Realizados"
+      "projectsCompleted": "Proyectos Globales",
+      "countriesServed": "Países Atendidos"
     }
   },
   "about": {
-    "title": "Acerca de Nosotros",
-    "description": "José Uebi Maluf es la fuerza impulsora detrás de JMaluf Consultoría, aportando más de dos décadas de experiencia en el sector alimentario y agroindustrial. Su carrera incluye un período significativo como ejecutivo en BRF, donde perfeccionó su experiencia en planificación estratégica, eficiencia operativa y análisis de mercado. La formación académica de José incluye títulos en Ingeniería y Administración de la Universidad Estatal de Maringá (UEM), proporcionando una base sólida para su trabajo de consultoría.",
-    "valuesTitle": "Nuestros Valores",
-    "values": {
+    "title": "Sobre Nosotros",
+    "description": "Con más de 37 años de experiencia y una trayectoria consolidada en la industria, JMaluf Consulting actúa globalmente en proyectos de desarrollo de productos, innovación y desarrollo de negocios. Experiencia construida en proyectos de diferentes complejidades, con impacto directo en portafolio y generación de ingresos, conectando cadenas completas en los sectores de ingredientes y alimentos.",
+    "description_1": "Se posiciona como un punto de convergencia entre conocimiento técnico profundo, experiencia industrial, comercial y decisiones estratégicas orientadas al mercado. Apoya a empresas en la creación de soluciones viables, escalables y sostenibles, y es especialista en el mercado alimentario.",
+    "description_2": "Liderada por su fundador y CEO, José Maluf, actúa con una red calificada de especialistas y socios técnicos, industriales y académicos, según la necesidad de cada proyecto. José Maluf es Ingeniero Mecánico, Doctor y Magíster en Ingeniería Química, especialista en Hidrólisis Enzimática de Proteínas Animales, habiendo actuado como ejecutivo en grandes empresas y multinacionales, tales como MBRF S/A, Cocamar y Gelita.",
+    "principlesTitle": "Nuestra actuación está anclada en principios claros:",
+    "principles": {
       "integrity": {
-        "title": "Integridad",
-        "description": "Defendemos los más altos estándares éticos en todas nuestras interacciones, asegurando transparencia y confianza."
+        "title": "Excelencia Técnica Aplicada",
+        "description": "Decisiones basadas en ciencia y experiencia real."
       },
-      "quality": {
-        "title": "Calidad",
-        "description": "Estamos comprometidos a ofrecer resultados excepcionales a través de análisis rigurosos y soluciones innovadoras."
+      "confidentiality": {
+        "title": "Ética y Confidencialidad",
+        "description": "Respeto absoluto a la información, clientes y socios."
       },
-      "sustainability": {
-        "title": "Sostenibilidad",
-        "description": "Promovemos prácticas sostenibles que benefician tanto a nuestros clientes como al medio ambiente."
+      "transparency": {
+        "title": "Transparencia e Imparcialidad Técnica",
+        "description": "Claridad sobre alcance, riesgos y limitaciones. Actuación independiente, sin conflicto de intereses."
+      },
+      "businessFocus": {
+        "title": "Enfoque en el Resultado del Negocio",
+        "description": "Técnica que genera impacto positivo y rentabilidad."
       }
-    },
-    "missionTitle": "Nuestra Misión",
-    "missionDescription": "Empoderar a las empresas del sector alimentario y agroindustrial con conocimientos estratégicos y excelencia operativa, impulsando el crecimiento sostenible y el liderazgo de mercado."
+    }
   },
   "services": {
-    "title": "Nuestros Servicios",
-    "description": "JMaluf Consultoría ofrece una gama de servicios especializados diseñados para abordar los desafíos y oportunidades únicos dentro de los sectores alimentario y agroindustrial. Nuestro enfoque combina un profundo conocimiento de la industria con estrategias innovadoras para impulsar el crecimiento sostenible y la excelencia operativa.",
+    "title": "Servicios",
+    "subtitle": "Innovación aplicada, viabilidad industrial y soporte a la toma de decisiones de negocio",
+    "description": "JMaluf Consulting apoya a empresas en desafíos técnicos y estratégicos a lo largo de todo el ciclo de desarrollo de productos y procesos, desde la concepción y evaluación técnica hasta la decisión y ejecución industrial, siempre con enfoque en viabilidad, desempeño y resultado del negocio. De forma complementaria, actúa como parte técnica independiente en la evaluación y conexión entre proveedores, compradores y socios estratégicos.",
+    "cardsTitle": "¿Cuál es su desafío hoy? Producto | Proceso | Tecnología | Mercado | Venta",
     "contactButton": "Contáctenos",
     "items": {
-      "strategic": {
-        "title": "Consultoría en Gestión Estratégica",
-        "description": "Brindamos orientación estratégica para ayudar a las empresas a navegar la dinámica del mercado, optimizar operaciones y lograr el éxito a largo plazo."
+      "development": {
+        "title": "Desarrollo y optimización de productos y procesos",
+        "description": "Desde I+D de laboratorio hasta escala industrial, actúa en la creación y mejora continua, además de la gestión de rutina e indicadores"
       },
-      "innovation": {
-        "title": "Innovación de Productos",
-        "description": "Nuestro equipo asiste en el desarrollo de nuevos productos y la mejora de los existentes para satisfacer las demandas cambiantes de los consumidores y las tendencias del mercado."
+      "availability": {
+        "title": "Evaluación de viabilidad técnica, industrial y económica",
+        "description": "Analiza procesos, costos y desempeño, proponiendo inversiones seguras y tecnologías avanzadas"
       },
-      "environmental": {
-        "title": "Sostenibilidad Ambiental",
-        "description": "Ayudamos a las empresas a implementar prácticas sostenibles, reducir el impacto ambiental y mejorar su reputación de marca."
+      "escalation": {
+        "title": "Escalado y ejecución técnica de proyectos",
+        "description": "Diseña y estructura proyectos técnicos y apoya su ejecución práctica, aplicando biotecnología y sostenibilidad"
       },
-      "process": {
-        "title": "Desarrollo de Nuevos Procesos",
-        "description": "Apoyamos el desarrollo e implementación de nuevos procesos para mejorar la eficiencia, reducir costos y garantizar la calidad del producto."
+      "support": {
+        "title": "Soporte técnico a la decisión y conexión con el mercado",
+        "description": "Evalúa tecnologías, proveedores y apoya la estructuración de alianzas técnicas y comerciales"
       }
     }
   },
   "contact": {
     "title": "Contáctenos",
-    "description": "Estamos aquí para ayudarte. Contáctanos si tienes alguna pregunta o consulta.",
+    "description": "Estamos aquí para ayudar. Contáctenos si tiene alguna duda o pregunta.",
     "form": {
       "name": "Nombre",
-      "email": "correo electrónico",
+      "email": "Correo electrónico",
       "message": "Mensaje",
       "submit": "Enviar",
       "placeholder": {
@@ -71,9 +79,9 @@
         "message": "Su Mensaje"
       },
       "required": {
-        "name": "Por favor, introduzca su nombre.",
-        "email": "Por favor, introduzca su correo electrónico.",
-        "message": "Por favor, introduzca su mensaje."
+        "name": "Por favor, ingrese su nombre",
+        "email": "Por favor, ingrese su correo electrónico",
+        "message": "Por favor, ingrese su mensaje"
       }
     },
     "otherWays": {
@@ -83,7 +91,7 @@
       "linkedin": "LinkedIn",
       "linkedinText": "Conéctese con nosotros en LinkedIn",
       "whatsapp": "WhatsApp",
-      "whatsappText": "Envíenos un mensaje por WhatsApp",
+      "whatsappText": "Envíe un mensaje por WhatsApp",
       "whatsappMessage": "Hola, me gustaría más información sobre su consultoría"
     }
   }

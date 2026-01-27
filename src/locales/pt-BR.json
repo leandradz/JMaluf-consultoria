@@ -6,54 +6,62 @@
     "contact": "Contato"
   },
   "home": {
-    "title": "Especialista em inovação, gestão e sustentabilidade para o setor alimentício.",
-    "description": "A JMaluf Consultoria, liderada pelo consultor José Uebi Maluf, oferece serviços de consultoria especializada no setor agroalimentar. Nosso foco é impulsionar a inovação, aprimorar as práticas de gestão e promover soluções sustentáveis ​​para empresas do setor.",
+    "title": "Consultoria técnica e estratégica para desenvolvimento de produtos, processos e intermediação de negócios",
+    "description": "A JMaluf Consulting é uma consultoria técnica especializada no desenvolvimento e otimização de produtos e processos, conectando tecnologias, parceiros estratégicos e oportunidades de mercado em escala global.",
+    "description_2": "Atua como um hub técnico-estratégico, apoiando empresas dos setores de ingredientes e alimentos para os mercados de nutrição humana (food), nutrição animal (feed), nutracêuticos e biosoluções para plantas em desafios que exigem execução técnica, tomada de decisão segura e geração de valor econômico, com foco em agregação de valor à matéria-prima.",
     "stats": {
       "yearsExperience": "Anos de Experiência",
-      "projectsCompleted": "Projetos Realizados"
+      "projectsCompleted": "Projetos Globais",
+      "countriesServed": "Países Atendidos"
     }
   },
   "about": {
     "title": "Sobre Nós",
-    "description": "José Uebi Maluf é a força motriz por trás da JMaluf Consultoria, trazendo mais de duas décadas de experiência no setor alimentício e agrícola. Sua carreira inclui uma passagem significativa como executivo na BRF, onde aperfeiçoou sua expertise em planejamento estratégico, eficiência operacional e análise de mercado. A formação acadêmica de José inclui graduações em Engenharia e Administração pela Universidade Estadual de Maringá (UEM), fornecendo uma base sólida para seu trabalho de consultoria.",
-    "valuesTitle": "Nossos Valores",
-    "values": {
+    "description": "Com mais de 37 anos de experiência e uma trajetória consolidada dentro da indústria, a JMaluf Consulting atua globalmente em projetos de desenvolvimento de produtos, inovação e desenvolvimento de negócios. Experiência construída em projetos de diferentes complexidades, com impacto direto em portfólio e geração de receita. conectando cadeias completas nos setores de ingredientes e alimentos.",
+    "description_1": "Posiciona-se como um ponto de convergência entre conhecimento técnico profundo, experiência industrial, comercial e decisões estratégicas orientadas ao mercado. Apoia empresas na criação de soluções viáveis, escaláveis e sustentáveis, é especialista no mercado alimentício.",
+    "description_2": "Liderada pelo seu fundador e CEO, José Maluf, atua com uma rede qualificada de especialistas e parceiros técnicos, industriais e acadêmicos, conforme a necessidade da cada projeto. José Maluf é Engenheiro Mecânico, Doutor e Mestre em Engenharia Química, especialista em Hidrólise Enzimática de Proteínas Animais, tendo atuado como executivo em grandes empresas e multinacionais, tais como MBRF S/A, Cocamar e Gelita.",
+    "principlesTitle": "Nossa atuação é ancorada em princípios claros:",
+    "principles": {
       "integrity": {
-        "title": "Integridade",
-        "description": "Defendemos os mais altos padrões éticos em todas as nossas interações, garantindo transparência e confiança."
+        "title": "Excelência Técnica Aplicada",
+        "description": "Decisões baseadas em ciência e experiência real."
       },
-      "quality": {
-        "title": "Qualidade",
-        "description": "Estamos comprometidos em entregar resultados excepcionais através de análises rigorosas e soluções inovadoras."
+      "confidentiality": {
+        "title": "Ética e Confidêncialidade",
+        "description": "Respeito absoluto às informações, clientes e parceiros."
       },
-      "sustainability": {
-        "title": "Sustentabilidade",
-        "description": "Promovemos práticas sustentáveis que beneficiam nossos clientes e o meio ambiente."
+      "transparency": {
+        "title": "Transparência e Imparcialidade Técnica",
+        "description": "Clareza sobre escopo, riscos e limitações. Atuação independente, sem conflito de interesses."
+      },
+      "businessFocus": {
+        "title": "Foco no Resultado do Negócio",
+        "description": "Ténica que gera impacto positivo e rentabilidade."
       }
-    },
-    "missionTitle": "Nossa Missão",
-    "missionDescription": "Capacitar empresas do setor alimentício e agrícola com insights estratégicos e excelência operacional, impulsionando o crescimento sustentável e a liderança de mercado."
+    }
   },
   "services": {
-    "title": "Nossos Serviços",
-    "description": "A JMaluf Consultoria oferece uma gama de serviços especializados projetados para atender aos desafios e oportunidades únicos nos setores alimentício e agrícola. Nossa abordagem combina profundo conhecimento do setor com estratégias inovadoras para impulsionar o crescimento sustentável e a excelência operacional.",
+    "title": "Serviços",
+    "subtitle": "Inovação aplicada, viabilidade industrial e suporte à decisão de negócio",
+    "description": "A JMaluf Consulting apoia empresas em desafios técnicos e estratégicos ao longo de todo o ciclo de desenvolvimento de produtos e processos, desde a concepção e avaliação técnica até a decisão e execução industrial, sempre com foco em viabilidade, desempenho e resultado do negócio. De forma complementar, atua como parte técnica independente na avaliação e conexão entre fornecedores, compradores e parceiros estratégicos.",
+    "cardsTitle": "Qual é o seu desafio hoje? Produto | Processo | Tecnologia | Mercado | Venda",
     "contactButton": "Entre em Contato",
     "items": {
-      "strategic": {
-        "title": "Consultoria em Gestão Estratégica",
-        "description": "Fornecemos orientação estratégica para ajudar as empresas a navegar pela dinâmica do mercado, otimizar operações e alcançar o sucesso a longo prazo."
+      "development": {
+        "title": "Desenvolvimento e otimização de produtos e processos",
+        "description": "Partindo do P&D de bancada à escala industrial, atua na criação e melhoria contínua, além da gestão de rotina e indicadores"
       },
-      "innovation": {
-        "title": "Inovação de Produtos",
-        "description": "Nossa equipe auxilia no desenvolvimento de novos produtos e no aprimoramento dos existentes para atender às demandas em evolução dos consumidores e tendências do mercado."
+      "availability": {
+        "title": "Avaliação de viabilidade técnica, industrial e econômica",
+        "description": "Analisa processos, custos e performance, propondo investimentos seguros e tecnologias avançadas"
       },
-      "environmental": {
-        "title": "Sustentabilidade Ambiental",
-        "description": "Ajudamos as empresas a implementar práticas sustentáveis, reduzir o impacto ambiental e melhorar sua reputação de marca."
+      "escalation": {
+        "title": "Escalonamento e execução técnica de projetos",
+        "description": "Desenha e estrutura projetos técnicos e apoia sua execução prática, aplicando biotecnologia e sustentabilidade"
       },
-      "process": {
-        "title": "Desenvolvimento de Novos Processos",
-        "description": "Apoiamos o desenvolvimento e implementação de novos processos para melhorar a eficiência, reduzir custos e garantir a qualidade do produto."
+      "support": {
+        "title": "Suporte técnico à decisão e à conexão com o mercado",
+        "description": "Avalia tecnologias, fornecedores e apoia a estruturação de parcerias técnicas e comerciais"
       }
     }
   },

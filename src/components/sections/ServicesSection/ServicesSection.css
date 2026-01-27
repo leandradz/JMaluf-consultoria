@@ -26,7 +26,6 @@
 .services-title {
   font-size: var(--font-size-4xl) !important;
   font-weight: var(--font-weight-extrabold) !important;
-  margin-bottom: var(--spacing-lg) !important;
   color: var(--color-primary-dark) !important;
   font-family: "Work Sans" !important;
   letter-spacing: -0.5px;
@@ -34,6 +33,18 @@
   text-align: left !important;
   animation: fadeInScale 0.8s ease-out 0.2s forwards;
   opacity: 0;
+}
+
+.services-subtitle {
+  font-size: 24px !important;
+  font-weight: var(--font-weight-extrabold) !important;
+  margin-bottom: 0px !important;
+  margin-bottom: var(--spacing-lg) !important;
+  color: var(--color-primary-dark) !important;
+  font-family: "Work Sans" !important;
+  letter-spacing: -0.5px;
+  line-height: var(--line-height-tight) !important;
+  text-align: left !important;
 }
 
 .services-description {

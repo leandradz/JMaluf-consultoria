@@ -6,84 +6,92 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Specialist in innovation, management and sustainability for the food sector.",
-    "description": "JMaluf Consultoria, led by consultant José Uebi Maluf, offers specialized consulting services in the agri-food sector. Our focus is to drive innovation, improve management practices, and promote sustainable solutions for companies in the sector.",
+    "title": "Technical and strategic consulting for product, process and business development",
+    "description": "JMaluf Consulting is a technical consultancy specialized in the development and optimization of products and processes, connecting technologies, strategic partners and market opportunities on a global scale.",
+    "description_2": "Acts as a technical-strategic hub, supporting companies in the ingredients and food sectors for the human nutrition (food), animal nutrition (feed), nutraceuticals and plant biosolutions markets in challenges that require technical execution, safe decision-making and economic value generation, with a focus on adding value to raw materials.",
     "stats": {
       "yearsExperience": "Years of Experience",
-      "projectsCompleted": "Projects Completed"
+      "projectsCompleted": "Global Projects",
+      "countriesServed": "Countries Served"
     }
   },
   "about": {
     "title": "About Us",
-    "description": "José Uebi Maluf is the driving force behind JMaluf Consultoria, bringing over two decades of experience in the food and agribusiness sector. His career includes a significant tenure as an executive at BRF, where he honed his expertise in strategic planning, operational efficiency, and market analysis. José's academic background includes degrees in Engineering and Administration from the State University of Maringá (UEM), providing a solid foundation for his consulting work.",
-    "valuesTitle": "Our Values",
-    "values": {
+    "description": "With over 37 years of experience and a solid track record in the industry, JMaluf Consulting operates globally in product development, innovation and business development projects. Experience built in projects of different complexities, with direct impact on portfolio and revenue generation, connecting complete chains in the ingredients and food sectors.",
+    "description_1": "Positions itself as a convergence point between deep technical knowledge, industrial and commercial experience, and market-oriented strategic decisions. Supports companies in creating viable, scalable and sustainable solutions, and is a specialist in the food market.",
+    "description_2": "Led by its founder and CEO, José Maluf, it works with a qualified network of technical, industrial and academic specialists and partners, according to the needs of each project. José Maluf is a Mechanical Engineer, PhD and Master in Chemical Engineering, specialist in Enzymatic Hydrolysis of Animal Proteins, having worked as an executive in large companies and multinationals, such as MBRF S/A, Cocamar and Gelita.",
+    "principlesTitle": "Our work is anchored in clear principles:",
+    "principles": {
       "integrity": {
-        "title": "Integrity",
-        "description": "We uphold the highest ethical standards in all our interactions, ensuring transparency and trust."
+        "title": "Applied Technical Excellence",
+        "description": "Decisions based on science and real experience."
       },
-      "quality": {
-        "title": "Quality",
-        "description": "We are committed to delivering exceptional results through rigorous analysis and innovative solutions."
+      "confidentiality": {
+        "title": "Ethics and Confidentiality",
+        "description": "Absolute respect for information, clients and partners."
       },
-      "sustainability": {
-        "title": "Sustainability",
-        "description": "We promote sustainable practices that benefit both our clients and the environment."
+      "transparency": {
+        "title": "Transparency and Technical Impartiality",
+        "description": "Clarity about scope, risks and limitations. Independent action, without conflict of interest."
+      },
+      "businessFocus": {
+        "title": "Focus on Business Results",
+        "description": "Technique that generates positive impact and profitability."
       }
-    },
-    "missionTitle": "Our Mission",
-    "missionDescription": "To empower food and agribusiness companies with strategic insights and operational excellence, driving sustainable growth and market leadership."
+    }
   },
   "services": {
-    "title": "Our Services",
-    "description": "JMaluf Consultoria offers a range of specialized services designed to address the unique challenges and opportunities within the food and agribusiness sectors. Our approach combines deep industry knowledge with innovative strategies to drive sustainable growth and operational excellence.",
+    "title": "Services",
+    "subtitle": "Applied innovation, industrial feasibility and support for business decision-making",
+    "description": "JMaluf Consulting supports companies in technical and strategic challenges throughout the entire product and process development cycle, from conception and technical evaluation to decision and industrial execution, always focusing on feasibility, performance and business results. Additionally, it acts as an independent technical part in the evaluation and connection between suppliers, buyers and strategic partners.",
+    "cardsTitle": "What is your challenge today? Product | Process | Technology | Market | Sales",
     "contactButton": "Contact Us",
     "items": {
-      "strategic": {
-        "title": "Strategic Management Consulting",
-        "description": "We provide strategic guidance to help businesses navigate market dynamics, optimize operations, and achieve long-term success."
+      "development": {
+        "title": "Product and process development and optimization",
+        "description": "From bench R&D to industrial scale, acts in creation and continuous improvement, as well as routine and indicator management"
       },
-      "innovation": {
-        "title": "Product Innovation",
-        "description": "Our team assists in developing new products and enhancing existing ones to meet evolving consumer demands and market trends."
+      "availability": {
+        "title": "Technical, industrial and economic feasibility assessment",
+        "description": "Analyzes processes, costs and performance, proposing safe investments and advanced technologies"
       },
-      "environmental": {
-        "title": "Environmental Sustainability",
-        "description": "We help companies implement sustainable practices, reduce environmental impact, and enhance their brand reputation."
+      "escalation": {
+        "title": "Project scaling and technical execution",
+        "description": "Designs and structures technical projects and supports their practical execution, applying biotechnology and sustainability"
       },
-      "process": {
-        "title": "New Process Development",
-        "description": "We support the development and implementation of new processes to improve efficiency, reduce costs, and ensure product quality."
+      "support": {
+        "title": "Technical support for decision-making and market connection",
+        "description": "Evaluates technologies, suppliers and supports the structuring of technical and commercial partnerships"
       }
     }
   },
   "contact": {
     "title": "Contact Us",
-    "description": "We're here to help. Reach out to us with any questions or inquiries.",
+    "description": "We are here to help. Contact us if you have any questions or inquiries.",
     "form": {
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "submit": "Submit",
+      "submit": "Send",
       "placeholder": {
         "name": "Your Name",
         "email": "Your Email",
         "message": "Your Message"
       },
       "required": {
-        "name": "Please, enter your name.",
-        "email": "Please, enter your email.",
-        "message": "Please, enter your message."
+        "name": "Please enter your name",
+        "email": "Please enter your email",
+        "message": "Please enter your message"
       }
     },
     "otherWays": {
-      "title": "Other forms of contact",
+      "title": "Other ways to contact",
       "phone": "Phone",
       "email": "Email",
       "linkedin": "LinkedIn",
       "linkedinText": "Connect with us on LinkedIn",
       "whatsapp": "WhatsApp",
-      "whatsappText": "Send us a message on WhatsApp",
+      "whatsappText": "Send a message on WhatsApp",
       "whatsappMessage": "Hello, I would like more information about your consultancy"
     }
   }
