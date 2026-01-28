@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 100px 20px;
+  padding: 100px 20px 20px 20px;
   background: var(--color-white);
   text-align: left;
 }
@@ -18,7 +18,7 @@
 
 .services-content {
   width: 100%;
-  max-width: var(--container-lg);
+  /* max-width: var(--container-lg); removido para ocupar toda a largura */
   animation: fadeInUp 0.8s ease-out;
   text-align: left;
 }
@@ -47,6 +47,7 @@
   text-align: left !important;
 }
 
+
 .services-description {
   font-size: var(--font-size-md) !important;
   color: var(--color-gray-400) !important;
@@ -54,6 +55,7 @@
   padding: 0 !important;
   line-height: var(--line-height-loose) !important;
   text-align: left !important;
+  width: 100%;
   animation: fadeInScale 0.8s ease-out 0.4s forwards;
   opacity: 0;
 }

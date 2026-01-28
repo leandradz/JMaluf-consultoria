@@ -1,5 +1,9 @@
 .contact-section {
-  padding: 100px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 20px 20px 20px;
   background: linear-gradient(
     135deg,
     var(--color-bg-gradient-start) 0%,
@@ -8,6 +12,7 @@
 }
 
 .contact-content {
+  width: 100%;
   max-width: var(--container-lg);
   margin: 0 auto;
 }
@@ -24,12 +29,11 @@
 }
 
 .contact-description {
-  font-size: var(--font-size-md);
-  line-height: 1.8;
+  font-size: var(--font-size-md) !important;
+  color: var(--color-gray-400) !important;
+  line-height: var(--line-height-loose) !important;
   text-align: left;
-  color: var(--color-gray-400);
   margin-bottom: 56px !important;
-  max-width: var(--container-sm);
 }
 
 /* Form Styles */
