@@ -4,24 +4,24 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://jmalufconsultoria.com.br/</loc>
+    <loc>https://jmalufconsulting.com.br/</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-br" href="https://jmalufconsultoria.com.br/?lang=pt-BR"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmalufconsultoria.com.br/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jmalufconsultoria.com.br/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://jmalufconsulting.com.br/?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jmalufconsulting.com.br/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jmalufconsulting.com.br/?lang=es"/>
   </url>
   
   <!-- Services Page -->
   <url>
-    <loc>https://jmalufconsultoria.com.br/services</loc>
+    <loc>https://jmalufconsulting.com.br/services</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="pt-br" href="https://jmalufconsultoria.com.br/services?lang=pt-BR"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://jmalufconsultoria.com.br/services?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://jmalufconsultoria.com.br/services?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://jmalufconsulting.com.br/services?lang=pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jmalufconsulting.com.br/services?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jmalufconsulting.com.br/services?lang=es"/>
   </url>
 
 </urlset>

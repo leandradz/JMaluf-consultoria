@@ -1,4 +1,4 @@
-# Configuração EmailJS - JMaluf Consultoria
+# Configuração EmailJS - JMaluf Consulting
 
 Este guia ajudará você a configurar o EmailJS para o formulário de contato.
 

@@ -42,8 +42,8 @@ function Navigation() {
     <Header className="navigation-header">
       <div className="nav-container">
         <Link to="/" className="nav-logo" onClick={handleLogoClick}>
-          <img src={logo} alt="JMaluf Consultoria" className="logo-img" />
-          <span className="logo-text">JMaluf Consultoria</span>
+          <img src={logo} alt="JMaluf Consulting" className="logo-img" />
+          <span className="logo-text">JMaluf Consulting</span>
         </Link>
 
         {/* Desktop Menu */}

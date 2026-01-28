@@ -21,7 +21,7 @@ function HeroSection() {
           <div className="hero-logo-wrapper">
             <img
               draggable={false}
-              alt="Logo JMaluf Consultoria"
+              alt="Logo JMaluf Consulting"
               src={logo}
               className="hero-logo"
             />
@@ -29,7 +29,7 @@ function HeroSection() {
         </Col>
 
         <Col xs={24} md={12} lg={13} className="hero-text-col">
-          <div className="hero-label">CONSULTORIA ESPECIALIZADA</div>
+          <div className="hero-label">{t("home.tag")}</div>
           <Title level={1} className="hero-title">
             {t("home.title")}
           </Title>

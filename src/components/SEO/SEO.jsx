@@ -21,7 +21,7 @@ function SEO({
   structuredData = null 
 }) {
   const { i18n } = useTranslation();
-  const baseUrl = 'https://jmalufconsultoria.com.br';
+  const baseUrl = 'https://jmalufconsulting.com.br';
   const fullUrl = `${baseUrl}${path}`;
   const currentLang = i18n.language;
 

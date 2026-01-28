@@ -116,7 +116,7 @@ function Footer() {
         </div>
 
         <p className="footer-copyright">
-          © 2026 JMaluf Consultoria. All rights reserved.
+          © 2026 JMaluf Consulting. All rights reserved.
         </p>
       </div>
     </footer>
