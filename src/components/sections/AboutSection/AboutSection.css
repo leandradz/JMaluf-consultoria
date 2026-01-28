@@ -4,11 +4,7 @@
   justify-content: center;
   width: 100%;
   padding: 100px 20px 20px 20px;
-  background: linear-gradient(
-    135deg,
-    var(--color-bg-gradient-start) 0%,
-    var(--color-bg-gradient-end) 100%
-  );
+  background: #f3f5f7;
 }
 
 /* Mobile: Add section separator */

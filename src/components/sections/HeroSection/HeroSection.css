@@ -226,7 +226,7 @@
   }
 
   .hero-title {
-    font-size: 46px !important;
+    font-size:  var(--font-size-2xl) !important;
     line-height: 1.12 !important;
   }
 

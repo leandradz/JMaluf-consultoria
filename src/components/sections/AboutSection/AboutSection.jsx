@@ -8,6 +8,8 @@ import {
 } from "@ant-design/icons";
 import ValueCard from "../../ValueCard/ValueCard";
 import "./AboutSection.css";
+import ContactWhatsAppButton from "../../ContactWhatsAppButton/ContactWhatsAppButton";
+import { CONTACT_INFO } from "../../../constants/config";
 
 const { Title, Paragraph } = Typography;
 
@@ -71,6 +73,9 @@ function AboutSection() {
             </Col>
           ))}
         </Row>
+        <div className="about-cta">
+          <ContactWhatsAppButton whatsappNumber={CONTACT_INFO.PHONE_WHATSAPP} />
+        </div>
       </div>
     </div>
   );

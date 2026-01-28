@@ -18,7 +18,6 @@
 
 .services-content {
   width: 100%;
-  /* max-width: var(--container-lg); removido para ocupar toda a largura */
   animation: fadeInUp 0.8s ease-out;
   text-align: left;
 }
@@ -46,7 +45,6 @@
   line-height: var(--line-height-tight) !important;
   text-align: left !important;
 }
-
 
 .services-description {
   font-size: var(--font-size-md) !important;
@@ -117,4 +115,27 @@
   .services-description {
     font-size: var(--font-size-base) !important;
   }
+}
+
+.services-cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.services-grid .ant-card {
+  background: #fff;
+  color: #18345c;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(24,52,92,0.08);
+}
+
+.services-grid .ant-card .ant-typography {
+  color: #18345c !important;
+}
+
+.services-grid .ant-card .anticon {
+  color: var(--color-primary) !important;
 }

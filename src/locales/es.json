@@ -95,5 +95,8 @@
       "whatsappText": "Envíe un mensaje por WhatsApp",
       "whatsappMessage": "Hola, me gustaría más información sobre su consultoría"
     }
+  },
+  "extra": {
+    "talkToConsultant": "Hable con un consultor"
   }
 }
